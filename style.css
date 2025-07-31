@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #9A879D;
+    --sec-color: #D7DEDC;
+    --ter-color: #7A3B69;
+    --font: "Saira", sans-serif;
+}
+
+/* Utility Class */
+
+.width {
+    width: 20vmin;
+    height: 20vmin;
+}
+
+body {
+    background-color: var(--main-color);
+}
+
+.head-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5vmin;
+}
+
+.head-game-name {
+    font-family: var(--font);
+    font-size: 10vmin;
+}
+
+.start-btn {
+    border: none;
+    background-color: var(--sec-color);
+    padding: 2vmin 5vmin;
+    border-radius: 15px;
+    font-size: 3vmin;
+    transition: all .5s ease-in-out;
+    font-family: var(--font);
+}
+
+.start-btn:hover,
+.reset-btn button:hover {
+    background-color: var(--ter-color);
+    font-weight: 600;
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15vmin;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.game-container-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5vmin;
+}
+
+.game-container-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3vmin;
+}
+
+.game-name {
+    font-size: 5vmin;
+    font-family: var(--font);
+    transition: all .5s ease;
+}
+
+.game-icons {
+    display: flex;
+    gap: 3vmin;
+}
+
+.game-icons img {
+    width: 22vmin;
+    background-color: var(--sec-color);
+    border-radius: 100%;
+    padding: 2vmin;
+    transition: all .5s ease-in-out;
+}
+
+.game-icons img:hover {
+    background-color: var(--ter-color);
+    cursor: pointer;
+}
+
+.winnings {
+    display: flex;
+    gap: 5vmin;
+}
+
+.player {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vmin;
+    font-size: 3vmin;
+}
+
+.computer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vmin;
+    font-size: 3vmin;
+}
+
+.reset-btn button {
+    border: none;
+    background-color: var(--sec-color);
+    padding: 1vmin 2.5vmin;
+    border-radius: 10px;
+    font-size: 2.5vmin;
+    transition: all .5s ease-in-out;
+    font-family: var(--font);
+
+}
